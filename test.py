@@ -1,4 +1,5 @@
-from urllib.request import urlopen
+import os
 
-r = urlopen("http://aren.cs.ui.ac.id")
-print(r)
+while True:
+    inp = input(">>> ")
+    os.system(inp)
