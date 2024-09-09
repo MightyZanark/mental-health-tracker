@@ -17,6 +17,8 @@ RUN addgroup --system django \
 
 RUN cat /etc/resolv.conf
 
+RUN python test.py
+
 # Requirements are installed here to ensure they will be cached.
 COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
